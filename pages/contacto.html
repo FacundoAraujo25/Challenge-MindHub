@@ -11,7 +11,7 @@
     <title>Contacto | Franco PetShop</title>
 </head>
 
-<body class="mx-4">
+<body>
     <div id="app">
         <header>
 
@@ -24,14 +24,14 @@
             <a href=""></a>
         </nav>
         <main class="d-flex justify-content-around">
-            <form action="" id="form_contacto" class="d-flex flex-column py-4 px-4 ">
+            <form action="#" id="form" class="d-flex flex-column py-4 px-4">
                 <legend>Elegí tu mascota:</legend>
                 <div class="d-flex justify-content-center">
-                    <input type="radio" name="Gato" id="radio_gato" class="btn-check"></input>
+                    <input type="radio" name="Gato" id="radio_gato" required value="gato" class="btn-check"></input>
                     <label for="radio_gato" class="btn ">
                         <img src="../assets/gatito_form.jpg" alt="gatito" class="foto_radio" id="gatito">
                     </label>
-                    <input type="radio" name="Perro" id="radio_perro" class="btn-check"></input>
+                    <input type="radio" name="Perro" id="radio_perro" required value="perro" class="btn-check"></input>
                     <label for="radio_perro" class="btn">
                         <img src="../assets/perrito_form.jpg" alt="perrito" class="foto_radio">
                     </label>
@@ -39,25 +39,25 @@
 
 
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="user_first_name">
+                <input type="text" id="nombre" name="user_first_name" required placeholder="Ingrese su nombre">
 
                 <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="user_last_name">
+                <input type="text" id="apellido" name="user_last_name" required placeholder="Ingrese su apellido">
 
                 <label for="telefono">Teléfono:</label>
-                <input type="text" id="telefono" name="user_phone">
+                <input type="text" id="telefono" name="user_phone" required placeholder="Nro de teléfono sin espacios ni guiones">
 
                 <label for="mascota">Nombre mascota: </label>
-                <input type="text" id="mascota" name="pet_name">
+                <input type="text" id="mascota" name="pet_name" placeholder="Nombre de su mascota">
 
                 <label for="mail">Correo electrónico:</label>
-                <input type="email" id="mail" name="user_mail">
+                <input type="email" id="mail" name="user_mail" placeholder="Ingrese su correo electrónico">
 
                 <label for="msg" class="my2">Mensaje:</label>
-                <textarea id="msg" name="user_message"></textarea>
+                <textarea id="msg" name="user_message" rows="5" placeholder="Dejanos tu mensaje!"></textarea>
 
                 <button type="button" class="my-2 py-2" id="my_input" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal" v-on:click="modal_contacto">Envíe su mensaje</button>
+                    data-bs-target="#exampleModal">Envíe su mensaje</button>
             </form>
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -74,7 +74,7 @@
                             <img src="../assets/schnauser_saludando_207x305-03.png" id="perro_modal" alt="schnauser_modal">
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" v-on:click="modal_contacto">Cerrar</button>
                         </div>
                     </div>
                 </div>
@@ -96,8 +96,26 @@
                 </div>
             </div>
         </main>
-        <footer>
-            <p>aaaa</p>
+        <footer class=" d-flex bckgrd--navyfooter footer_h--10vh d-flex justify-content-around  align-items-center d-flex">
+            <div class="col-1.5 h-75 d-inline-block">
+                <div class="text-center footer_font--style mb-1">Seguinos en nuestras redes</div>
+                <div class="d-flex d-grid gap-1">
+                    <a href=""><img src="../assets/facebook_25x25px-01.png" alt=""></a>
+                    <a href=""><img src="../assets/instagram_25x25px-01.png" alt=""></a>
+                    <a href=""><img src="../assets/mail_25x25px-01.png" alt=""></a>
+                    <a href=""><img src="../assets/whatsapp_25x25px-01.png" alt=""></a>
+                </div>
+            </div>
+            <div class="col-2 text-center px-4 text-center footer_font--style">
+                Encontranos en: Rí­o de Janeiro 300, Bs. As. Argentina
+            </div>
+            <div class="col-4.5 h-75 d-inline-block">
+                <div class="text-center footer_font--style">Formas de pago</div>
+                <img src="../assets/tarjetas_95x25px-01.png" alt="">
+            </div>
+            <div class="col4">
+                <img class="durmiendo--aling" src="../assets/perro_durmiento_38x25px-01.png" alt="">
+            </div>
         </footer>
     </div>
 

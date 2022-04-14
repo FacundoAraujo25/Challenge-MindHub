@@ -1,20 +1,19 @@
-
 Vue.createApp({
-    data() {
-        return {
+    data(){
+        return{ 
 
         }
     },
-    created() {
+    created(){
         fetch('https://apipetshop.herokuapp.com/api/articulos')
     },
-    methods: {
-
-
-
+    methods:{
+        modal_contacto(){
+            let formulario = document.querySelector('#form')
+            formulario.reset()
+        }
     },
-    computed: {
-
+    computed:{
 
     }
 }).mount('#app')

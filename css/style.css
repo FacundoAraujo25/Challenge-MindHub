@@ -24,9 +24,6 @@ main{
     width: 14rem;
     height: 10rem;
 }
-footer{
-    background-color: #f5e4bf;
-}
 #form_contacto{
     list-style-type: none;
 }
@@ -39,6 +36,22 @@ form{
 #perro_modal{
     width: 12rem;
 }
-#msg{
-    height: 5rem;
+input{
+    margin: .25rem 0;
+}
+label{
+    margin: .25rem 0;
+}
+#huellas{
+    width: 10rem;
+}
+.bckgrd--navyfooter{
+    background-color: #f5e4bf;
+}
+.footer_h--10vh{
+    height: 12vh;
+}
+.footer_font--style {
+    color: #524a4a;
+    font-weight: 600;
 }
