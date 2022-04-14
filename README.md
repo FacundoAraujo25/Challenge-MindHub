@@ -1,2 +1,2 @@
 # Challenge-MindHub
-ReadMe del Challenge del Team Potter
+ReadMe del Challenge del Team Weasley
