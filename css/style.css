@@ -4,12 +4,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+header{
+    background-color: #503f8c;
+}
+nav{
+    background-color: #f5e4bf;
+}
+main{
+    background-color: #fcf7ed;
+}
 .gap-5{
     gap: 5rem!important;
 }
 
-.foto_checkbox{
-    width: 8vw;
+.foto_radio{
+    width: 15vw;
+}
+#gatito{
+    width: 15vw;
+    height: 22vh;
+}
+footer{
+    background-color: #f5e4bf;
+}
+#form_contacto{
+    list-style-type: none;
 }
 
 form{
