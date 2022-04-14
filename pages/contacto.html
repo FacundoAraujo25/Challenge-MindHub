@@ -23,13 +23,19 @@
             <a href="./pages/contacto.html">Contáctenos</a>
             <a href=""></a>
         </nav>
-        <main>
-            <form action="/my-handling-form-page" method="post" class="d-flex justify-content-center align-content-center py-4 px-4 ">
+        <main class="d-flex justify-content-center">
+            <form action="/my-handling-form-page" method="post" id="form_contacto" class="d-flex flex-column py-4 px-4 ">
                 <div>
                     <ul>
-                    <li class="li-cb">
-                        <input type="checkbox" name="Gato" id="checkbox_gato"><img src="../assets/gatito_form.jpg" alt="gatito" class="foto_checkbox"></input>
-                        <input type="checkbox" name="Perro" id="checkbox_perro"><img src="../assets/perrito_form.jpg" alt="perrito" class="foto_checkbox"></input>
+                    <li>
+                    <input type="checkbox" name="Gato" id="checkbox_gato" class="btn-check"></input>
+                    <label for="checkbox_gato" class="btn btn-outline-secondary">
+                        <img src="../assets/gatito_form.jpg" alt="gatito" class="foto_checkbox">
+                    </label>
+                    <input type="checkbox" name="Perro" id="checkbox_perro" class="btn-check"></input>
+                    <label for="checkbox_perro" class="btn btn-outline-secondary">
+                        <img src="../assets/perrito_form.jpg" alt="perrito" class="foto_checkbox">
+                    </label>
                     </li>
                 </ul>
                 </div>

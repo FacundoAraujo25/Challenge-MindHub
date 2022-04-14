@@ -23,4 +23,7 @@ main{
 footer{
     background-color: #f5e4bf;
 }
+#form_contacto{
+    list-style-type: none;
+}
 
