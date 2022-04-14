@@ -11,7 +11,7 @@
     <title>Contacto | Franco PetShop</title>
 </head>
 
-<body>
+<body class="mx-4">
     <div id="app">
         <header>
 
@@ -23,51 +23,39 @@
             <a href="./pages/contacto.html">Contáctenos</a>
             <a href=""></a>
         </nav>
-        <main class="d-flex justify-content-center">
-            <form action="/my-handling-form-page" method="post" id="form_contacto" class="d-flex flex-column py-4 px-4 ">
-                <div>
-                    <ul>
-                    <li>
-                    <input type="checkbox" name="Gato" id="checkbox_gato" class="btn-check"></input>
-                    <label for="checkbox_gato" class="btn btn-outline-secondary">
-                        <img src="../assets/gatito_form.jpg" alt="gatito" class="foto_checkbox">
-                    </label>
-                    <input type="checkbox" name="Perro" id="checkbox_perro" class="btn-check"></input>
-                    <label for="checkbox_perro" class="btn btn-outline-secondary">
-                        <img src="../assets/perrito_form.jpg" alt="perrito" class="foto_checkbox">
-                    </label>
-                    </li>
-                </ul>
-                </div>
-                <ul>
-                    <li>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="user_first_name">
-                    </li>
-                    <li>
-                        <label for="apellido">Apellido:</label>
-                        <input type="text" id="apellido" name="user_last_name">
-                    </li>
-                    <li>
-                        <label for="telefono">Teléfono:</label>
-                        <input type="text" id="telefono" name="user_phone">
-                    </li>
-                    <li>
-                        <label for="mascota">Nombre mascota: </label>
-                        <input type="text" id="mascota" name="pet_name">
-                    </li>
-                    <li>
-                        <label for="mail">Correo electrónico:</label>
-                        <input type="email" id="mail" name="user_mail">
-                    </li>
-                    <li>
-                        <label for="msg">Mensaje:</label>
-                        <textarea id="msg" name="user_message"></textarea>
-                    </li>
-                    <li class="button">
-                        <button type="submit">Envíe su mensaje</button>
-                    </li>
-                </ul>
+        <main>
+            <form id="form_contacto" class="d-flex flex-column py-4 px-4 ">
+            <div class="d-flex justify-content-center">
+                <input type="radio" name="Gato" id="radio_gato" class="btn-check"></input>
+                <label for="radio_gato" class="btn px-5">
+                    <img src="../assets/gatito_form.jpg" alt="gatito" class="foto_radio" id="gatito">
+                </label>
+                <input type="radio" name="Perro" id="radio_perro" class="btn-check"></input>
+                <label for="radio_perro" class="btn px-5">
+                    <img src="../assets/perrito_form.jpg" alt="perrito" class="foto_radio">
+                </label>
+            </div>
+
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="user_first_name">
+                        
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="user_last_name">
+
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="user_phone">
+
+                <label for="mascota">Nombre mascota: </label>
+                <input type="text" id="mascota" name="pet_name">
+
+                <label for="mail">Correo electrónico:</label>
+                <input type="email" id="mail" name="user_mail">
+
+                <label for="msg">Mensaje:</label>
+                <textarea id="msg" name="user_message"></textarea>
+
+                <button type="submit">Envíe su mensaje</button>
             </form>
         </main>
         <footer>
