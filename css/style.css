@@ -12,3 +12,9 @@
     width: 8vw;
 }
 
+form{
+    width: 40vw;
+    height: 90vh;
+    border: solid #7f6046;
+    border: 10vh 5vw
+}
