@@ -19,10 +19,12 @@ main{
 
 .foto_radio{
     width: 14rem;
+    height: 12rem;
+    border-radius: 50%;
 }
 #gatito{
     width: 14rem;
-    height: 10rem;
+    height: 12rem;
 }
 #form_contacto{
     list-style-type: none;
@@ -43,7 +45,8 @@ label{
     margin: .25rem 0;
 }
 #huellas{
-    width: 10rem;
+    height: 18rem;
+    padding-left: 5rem;
 }
 .bckgrd--navyfooter{
     background-color: #f5e4bf;
