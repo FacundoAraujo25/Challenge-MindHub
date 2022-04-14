@@ -4,11 +4,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+header{
+    background-color: #503f8c;
+}
+nav{
+    background-color: #f5e4bf;
+}
+main{
+    background-color: #fcf7ed;
+}
 .gap-5{
     gap: 5rem!important;
 }
 
 .foto_checkbox{
     width: 8vw;
+}
+footer{
+    background-color: #f5e4bf;
 }
 
