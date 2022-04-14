@@ -1,16 +1,20 @@
+
 Vue.createApp({
-    data(){
-        return{
+    data() {
+        return {
 
         }
     },
-    created(){
+    created() {
         fetch('https://apipetshop.herokuapp.com/api/articulos')
     },
-    methods:{
+    methods: {
+
+
 
     },
-    computed:{
+    computed: {
+
 
     }
 }).mount('#app')

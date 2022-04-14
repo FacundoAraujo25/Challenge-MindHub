@@ -18,11 +18,11 @@ main{
 }
 
 .foto_radio{
-    width: 15vw;
+    width: 14rem;
 }
 #gatito{
-    width: 15vw;
-    height: 22vh;
+    width: 14rem;
+    height: 10rem;
 }
 footer{
     background-color: #f5e4bf;
@@ -33,7 +33,12 @@ footer{
 
 form{
     width: 40vw;
-    height: 90vh;
-    border: solid #7f6046;
-    border: 10vh 5vw
+    min-height: 100vh;
+
+}
+#perro_modal{
+    width: 12rem;
+}
+#msg{
+    height: 5rem;
 }
