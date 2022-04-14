@@ -4,3 +4,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Variables */
+:root{
+    --violeta: #503f8c,
+    --
+}
+
+/* Diseño Body Farmacia y Juguetes */
+.tituloSeccion{
+    background-color: #f5e4bf;
+}
+.cardsJuguetes{
+    border: solid 1px #524a4a;
+    border-radius: 5px;
+}
+.botonCompra{
+    background-color: #503f8c;
+    color: white;
+}
