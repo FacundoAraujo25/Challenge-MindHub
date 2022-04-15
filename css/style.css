@@ -55,6 +55,10 @@ input{
 label{
     margin: .25rem 0;
 }
+.boton_modal{
+    background-color: #6F36BA;
+    color: #F1EDFC;
+}
 #huellas{
     height: 18rem;
     padding-left: 5rem;
