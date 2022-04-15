@@ -22,7 +22,7 @@
     border: 5px solid #503f8c !important;
 }
 main{
-    background-color: #fcf7ed;
+    background-color: #F1EDFC;
 }
 .gap-5{
     gap: 5rem!important;
@@ -60,12 +60,12 @@ label{
     padding-left: 5rem;
 }
 .bckgrd--navyfooter{
-    background-color: #f5e4bf;
+    background-color: #36174D;
 }
 .footer_h--10vh{
     height: 12vh;
 }
 .footer_font--style {
-    color: #524a4a;
+    color: #F1EDFC;
     font-weight: 600;
 }
