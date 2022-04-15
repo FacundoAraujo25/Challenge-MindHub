@@ -32,12 +32,11 @@
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
-                {{agregarProductos}}
                 <div class="offcanvas-body" v-if="productos_carrito.length == 0">
                     <p class="opacity-50">Todavía no hay productos en su carrito de compras.</p>
                 </div>
                 <div class="offcanvas-body" v-else>
-                    <div class="card mb-3" style="max-width: 540px;" v-for="producto in productos">
+                    <div class="card mb-3" style="max-width: 540px;" v-for="producto in productos_carrito">
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img v-bind:src="producto.imagen" class="img-fluid rounded-start" alt="...">
