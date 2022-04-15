@@ -22,6 +22,38 @@
             <a href="../pages/juguetes.html">Juguetes</a>
             <a href="#">Contáctenos</a>
             <a href=""></a>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight">Carrito de Compras</button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">Mis productos:</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                {{agregarProductos}}
+                <div class="offcanvas-body" v-if="productos_carrito.length == 0">
+                    <p class="opacity-50">Todavía no hay productos en su carrito de compras.</p>
+                </div>
+                <div class="offcanvas-body" v-else>
+                    <div class="card mb-3" style="max-width: 540px;" v-for="producto in productos">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img v-bind:src="producto.imagen" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-tittle">{{producto.nombre}}</h5>
+                                    <p class="card-text">{{producto.precio}}</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </nav>
         <main class="d-flex justify-content-around">
             <form action="#" id="form" class="d-flex flex-column py-4 px-4">
@@ -39,13 +71,14 @@
 
 
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="user_first_name" required placeholder="Ingrese su nombre">
+                <input type="text" id="nombre" name="user_first_name" placeholder="Ingrese su nombre" required>
 
                 <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="user_last_name" required placeholder="Ingrese su apellido">
+                <input type="text" id="apellido" name="user_last_name" placeholder="Ingrese su apellido" required>
 
                 <label for="telefono">Teléfono:</label>
-                <input type="text" id="telefono" name="user_phone" required placeholder="Nro de teléfono sin espacios ni guiones">
+                <input type="text" id="telefono" name="user_phone" placeholder="Nro de teléfono sin espacios ni guiones"
+                    required>
 
                 <label for="mascota">Nombre mascota: </label>
                 <input type="text" id="mascota" name="pet_name" placeholder="Nombre de su mascota">
@@ -56,25 +89,28 @@
                 <label for="msg" class="my2">Mensaje:</label>
                 <textarea id="msg" name="user_message" rows="5" placeholder="Dejanos tu mensaje!"></textarea>
 
-                <button type="button" class="my-2 py-2" id="my_input" data-bs-toggle="modal"
+                <button type="submit" class="my-2 py-2" id="my_input" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">Envíe su mensaje</button>
             </form>
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false"tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
+            <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">Muchas gracias!</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" v-on:click="modal_contacto"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                v-on:click="modal_contacto"></button>
                         </div>
                         <div class="modal-body text-center">
-                            <p>Su mensaje ha sido enviado con éxito.</p> 
+                            <p>Su mensaje ha sido enviado con éxito.</p>
                             <p>Pronto nos estaremos comunicando!</p>
-                            <img src="../assets/schnauser_saludando_207x305-03.png" id="perro_modal" alt="schnauser_modal">
+                            <img src="../assets/schnauser_saludando_207x305-03.png" id="perro_modal"
+                                alt="schnauser_modal">
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" v-on:click="modal_contacto">Cerrar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                v-on:click="modal_contacto">Cerrar</button>
                         </div>
                     </div>
                 </div>
@@ -91,15 +127,16 @@
                     <h5>Encontranos en:</h5>
                     <img src="../assets/huellas-removebg-preview.png" alt="huellas" id="huellas">
                     <div>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.6871004429195!2d-58.432572385035286!3d-34.61207296544667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca429815227f%3A0x5d302e497c2cda87!2sR%C3%ADo%20de%20Janeiro%20300%2C%20C1405CCB%20CABA!5e0!3m2!1ses-419!2sar!4v1649965927150!5m2!1ses-419!2sar"
-                        width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.6871004429195!2d-58.432572385035286!3d-34.61207296544667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca429815227f%3A0x5d302e497c2cda87!2sR%C3%ADo%20de%20Janeiro%20300%2C%20C1405CCB%20CABA!5e0!3m2!1ses-419!2sar!4v1649965927150!5m2!1ses-419!2sar"
+                            width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
         </main>
-        <footer class=" d-flex bckgrd--navyfooter footer_h--10vh d-flex justify-content-around  align-items-center d-flex">
+        <footer
+            class=" d-flex bckgrd--navyfooter footer_h--10vh d-flex justify-content-around  align-items-center d-flex">
             <div class="col-1.5 h-75 d-inline-block">
                 <div class="text-center footer_font--style mb-1">Seguinos en nuestras redes</div>
                 <div class="d-flex d-grid gap-1">
