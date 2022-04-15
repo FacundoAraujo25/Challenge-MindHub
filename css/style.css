@@ -4,11 +4,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-header{
-    background-color: #503f8c;
+/*main*/
+.main_h--70vh {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
-nav{
-    background-color: #f5e4bf;
+.index_h2{
+    text-align: center;
+}
+.img-fluid {
+    width: 100%;
+}
+.border-dark{
+    border: 5px solid #503f8c !important;
 }
 main{
     background-color: #fcf7ed;
