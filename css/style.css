@@ -5,15 +5,154 @@
     box-sizing: border-box;
 }
 /*main*/
-.main_h--70vh {
-    min-height: 70vh;
+/* / ------------- Estilos Generales ------------- / */
+body{
+    min-height: 100vh;
+}
+header{
+    height: 4%;
+    background-color: var(--violeta);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    font-size: 1.8vw;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    color: var(--gris);
+}
+nav{
+    height: 2%;
+        font-family: 'Quicksand', sans-serif;
+    background-color: var(--violetaOscuro);
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+nav>a{
+    height: 100%;
+    width: 12%;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gris);
+    margin: 0 2rem;
+    text-decoration: none;
+}
+nav>a:hover{
+    transition: background-color 0.5s;
+    color: var(--marronClaro);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    background-color: var(--salmon);
+}
+main{
+    height: 91.5%;
+    background-color: var(--gris);
+}
+footer{
+    height:10%;
+    background-color: var(--violetaOscuro);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+}
+
+/* / ------------- Clases ------------- */ */
+.a_header{
+    color: var(--gris);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+.iconos_nav{
+    margin-right: 0.5rem;
+}
+/* ------------- ID ------------- */
+#pushed{
+    color: var(--marronClaro);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    background-color: var(--salmon);
+}
+#logo_header{
+    margin: 3rem 0 0 3rem;
+    z-index: 1;
+}
+#main_corte1{
+    height: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: var(--gris);
+}
+#bienvenidos_main{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    margin: 0 2% 8% 5%;
+}
+#bienvenidos_main>p{
+    height: 7vh;
+    margin: 0;
+    font-size: 8vh;
+}
+#main_corte2{
+    height: 33.3%;
+    background-color:var(--salmon);
+    display: flex;
+    justify-content: center;
+}
+.parrafos_quienes_somos{
+    color: var(--gris);
+    text-align: center;
+}
+#main_corte3{
+    height: 33.3%;
+    background-color:var(--violeta);
+    display: flex;
+    justify-content: center;
+}
+.contactos_header{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    margin-right: 3rem;
+}
+.contactos_header>a{
+    text-decoration: none;
+    color:var(--gris);
+}
+
+--------------------
+/* /footer/ */
+.perro_fixed{
+    position: fixed;
+    right: 40px;
+    top: 10rem;
+}
+
+.durmiendo{
+    position: fixed;
+    right: 40px;
+    bottom: 7px;
+}
+.footer_font--style {
+    color: var(--gris);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
 }
 .index_h2{
     text-align: center;
+    color: var(--gris);
 }
 .img-fluid {
     width: 100%;
@@ -21,11 +160,37 @@
 .border-dark{
     border: 5px solid #503f8c !important;
 }
-main{
-    background-color: #F1EDFC;
+
+/* /quienes somos/ */
+.border-left {
+    border-left: 2px solid white;
 }
-.gap-5{
-    gap: 5rem!important;
+.w-60{
+    width: 60%;
+    background-color: #FF4778;
+    color: white;
+}
+.w-40{
+    width: 40%;
+}
+.p-l10 {
+    padding-left: 10%;
+}
+.efecto {
+    background-color: aliceblue;
+    width: 150px;
+    height: 50px;
+    transform: rotate(-5deg);
+    display: block;
+    position: relative;
+}
+.adelante {
+    color: #6F36BA;
+    z-index: 1;
+    display: block;
+    position: absolute;
+    padding: 11px;
+    width: 100%;
 }
 
 .foto_radio{
@@ -62,14 +227,4 @@ label{
 #huellas{
     height: 18rem;
     padding-left: 5rem;
-}
-.bckgrd--navyfooter{
-    background-color: #36174D;
-}
-.footer_h--10vh{
-    height: 12vh;
-}
-.footer_font--style {
-    color: #F1EDFC;
-    font-weight: 600;
 }
