@@ -65,7 +65,7 @@ nav>a:hover{
     background-color: var(--salmon);
 }
 .boton_carrito{
-    color: #F3EFFE!important;
+    color: #F3EFFE;
     background-color: #36174D;
 }
 .boton_carrito:hover{
@@ -299,6 +299,14 @@ label{
     margin: .25rem 0;
 }
 .boton_modal{
+    background-color: #6F36BA;
+    color: #F1EDFC;
+}
+.modal-dialog{
+    bottom: 40vh !important;
+    right: 40vw !important;
+}
+.modal-header{
     background-color: #6F36BA;
     color: #F1EDFC;
 }
