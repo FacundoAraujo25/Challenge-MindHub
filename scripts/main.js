@@ -6,7 +6,7 @@ Vue.createApp({
             farmacia:[],
             productos_carrito:[],
             productos:[],
-            contador:0,
+            contador:1,
             subtotalProducto:0,
             subtotalTotal:0,
             productosEnStorage:[],
@@ -28,17 +28,18 @@ Vue.createApp({
     methods:{
 
         limiteCantidadMas(tarjeta){
-            tarjeta.__v++
-
+            this.contador++
+            tarjeta.stock--
             if(tarjeta.__v > tarjeta.stock){
-                tarjeta.__v = tarjeta.stock
+                this.contador = tarjeta.stock
             }
         },
 
         limiteCantidadMenos(tarjeta){
-            tarjeta.__v--
-            if (tarjeta.__v < 0){
-                tarjeta.__v = 0
+            this.contador--
+            tarjeta.stock++
+            if (this.contador < 0){
+                this.contador = 0
             }
         },
 
