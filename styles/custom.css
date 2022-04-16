@@ -224,11 +224,18 @@ footer{
 
 /* ------------- FARMACIA Y JUGUETES ------------- */
 
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
 .tituloSeccion{
     background-color: var(--salmon);
     color: var(--beige);
     text-align: center;
     padding: 0.5rem;
+}
+#juguetes{
+    margin-right: 9rem;
 }
 .cardsJuguetes{
     border: solid 3px var(--violeta);
@@ -288,9 +295,6 @@ footer{
     width: 40vw;
     min-height: 100vh;
 
-}
-#perro_modal{
-    width: 12rem;
 }
 input{
     margin: .25rem 0;
